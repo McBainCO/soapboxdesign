@@ -1,0 +1,24 @@
+{
+  "name": "soapbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "repository": "https://github.com/McBainCO/soapboxdesign",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^4.2.0",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-sass": "^2.3.2",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
+    "run-sequence": "^1.2.2"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Valerie Kraucunas",
+  "license": "ISC"
+}
