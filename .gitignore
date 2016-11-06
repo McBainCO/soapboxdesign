@@ -4,3 +4,4 @@ src/pages
 src/templates
 firebase.json
 .firebaserc
+gulpfile.js
