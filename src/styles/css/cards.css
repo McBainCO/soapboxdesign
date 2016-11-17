@@ -53,5 +53,7 @@ content .panel:hover .secondary {
 @media (max-width: 550px) {
     .panel {
         margin-bottom: 1.5rem;
+        box-sizing: border-box;
     }
+
 }
