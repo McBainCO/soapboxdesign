@@ -8,13 +8,15 @@ body {
     box-shadow: 0 1rem 2.5rem rgba(42, 42, 42, 0.2);
     padding: 2rem;
     margin-bottom: 4rem; }
-    body header .logo {
-      height: 150px; }
+    body header .logo, body header svg {
+      width: 20%;
+      height: auto; }
   body .link-block,
-  body nav {
+  body nav.container {
     display: flex;
     justify-content: space-around;
-    align-items: baseline; }
+    align-items: baseline;
+    margin-bottom: 0; }
   body main {
     margin-bottom: 4rem; }
   body footer {
@@ -26,10 +28,9 @@ body {
       padding: 1rem 0 0;
       text-align: center; }
 
-a:not(.no-hover) {
+a:not(.no-hover), a {
   color: #2a2a2a;
   text-decoration: none;
-  position: relative;
   overflow: hidden;
   padding: 0 6px;
   text-transform: uppercase;
@@ -59,8 +60,11 @@ a:not(.no-hover):hover:after {
 a:not(.no-hover):hover {
   color: #ffffff; }
 
+a:hover {
+  color: #446b6b; }
+
 content .less-margin {
-  margin-bottom: .2rem !important; }
+  margin-bottom: 0.2rem !important; }
 
 content .panel {
   position: relative;
@@ -109,17 +113,36 @@ content .panel:hover .secondary {
 
 @media (max-width: 550px) {
   .panel {
-    margin-bottom: 1.5rem; } }
-
-input:required:after {
-  content: "*";
-  color: red; }
+    margin-bottom: 1.5rem; }
+  .logo, svg {
+    min-width: 30%; } }
 
 form fieldset {
   background-color: #dcece9; }
+
+form textarea {
+  height: 100%;
+  width: 100%; }
 
 .rem-pad-1 {
   padding: 1rem; }
 
 .rem-pad-2 {
   padding: 2rem; }
+
+.intro {
+  text-align: left;
+  justify-content: center;
+  background-color: rgba(96, 153, 142, 0.3);
+  background: #ffffff;
+  background: linear-gradient(#7ce28f, #60998e 90%), linear-gradient(90deg, #dcece9 35%, #60998e 90%) !important;
+  margin: 0 0 4rem;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem; }
+  .intro h2 {
+    font-weight: bolder;
+    color: #dcece9;
+    text-shadow: 0 1rem 2.5rem rgba(42, 42, 42, 0.2); }

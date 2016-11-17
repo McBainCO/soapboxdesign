@@ -1,0 +1,57 @@
+content .panel {
+    position: relative;
+    min-height: 70vh;
+    box-shadow: 1rem 1rem 2.5rem rgba(42, 42, 42, 0.2);
+    overflow: hidden;
+}
+
+content .primary {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    background-color: #dcece9;
+}
+
+content .primary img {
+    width: 100%;
+}
+
+content .secondary {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 350ms ease-out;
+    -moz-transition: all 350ms ease-out;
+    -o-transition: all 350ms ease-out;
+    -ms-transition: all 350ms ease-out;
+    transition: all 350ms ease-out;
+    background-color: #60998e;
+}
+
+content .primary, content .secondary {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all 350ms ease-out;
+    -moz-transition: all 350ms ease-out;
+    -o-transition: all 350ms ease-out;
+    -ms-transition: all 350ms ease-out;
+    transition: all 350ms ease-out;
+    height: 100%;
+}
+
+content .panel:hover .primary {
+    opacity: 0;
+}
+
+content .panel:hover .secondary {
+    opacity: 1;
+}
+
+@media (max-width: 550px) {
+    .panel {
+        margin-bottom: 1.5rem;
+    }
+}
