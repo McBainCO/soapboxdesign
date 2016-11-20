@@ -8,7 +8,7 @@
          about 150 characters">
         <meta name="viewport" content="initial-scale=1.0">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-        <title>Soapbox Developer Evangelists</title>
+        <title>Soapbox Developer Evangelism</title>
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="styles/css/normalize.css">
@@ -16,37 +16,36 @@
         <link rel="stylesheet" type="text/css" href="styles/css/main.css">
         <link rel="stylesheet" type="text/css" href="styles/css/cards.css">
         <link rel="stylesheet" type="text/css" href="styles/css/slideshow.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
     </head>
     <body>
         <header class="row">
             <a href="index.html" class="no-hover">
-                <img src="assets/blue-green-buff-words.png" alt="green buffalo logo image" class="logo"/>
+                <img src="assets/logo-full.png" alt="Soapbox Developer Evangelism logo image" class="logo"/>
             </a>
             <nav class="container">
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html">Contact</a>
-                <a href="apply.html">Apply</a>
+                <a href="about">About</a>
+                <a href="services">Services</a>
+                <a href="contact">Contact</a>
+                <a href="apply">Apply</a>
             </nav>
         </header>
         <main class="container">
-            
+
     <div class='container'>
-        <h1>Nope.</h1>
+        <h1><em>Nope.</em></h1>
         <h2>Page not found.</h2>
-        <p>This specified file was not found on this website. Please check the URL for mistakes and try again.</p>
+        <p>This specified page was not found on this website. Please check the URL for mistakes and try again.</p>
     </div>
 
         </main>
         <footer>
             <div class="link-block container">
                 <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html">Contact</a>
-                <a href="apply.html">Apply</a>
+                <a href="about">About</a>
+                <a href="services">Services</a>
+                <a href="contact">Contact</a>
+                <a href="apply">Apply</a>
             </div>
             <div class="social-media container">
                 <a href="#" class="no-hover">
@@ -71,31 +70,7 @@
                 </p>
             </div>
         </footer>
-        <script>
-            var width = $(window).width();
-
-            if (width < 749) {
-                $('.logo').attr('src', 'assets/words-only2.png');
-            }
-            $(document).ready(function () {
-                $("nav a").each(function () {
-                    if (this.href == window.location.href) {
-                        $(this).addClass("current-page");
-                    }
-                });
-            });
-
-            $('.carousel').children(":first").addClass('isActive');
-
-            function rotateClass() {
-                $('.carousel > *.isActive').appendTo('.carousel').removeClass('isActive');
-                $('.carousel').children(":first").addClass('isActive');
-            }
-
-            // Set the Delay Time
-            setInterval(function () {
-                rotateClass();
-            }, 5000);
-        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="javascript/main-home.js"></script>
     </body>
 </html>
