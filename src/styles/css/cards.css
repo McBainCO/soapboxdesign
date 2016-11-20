@@ -2,7 +2,7 @@ content .panel {
     position: relative;
     min-height: 70vh;
     box-shadow: 1rem 1rem 2.5rem rgba(42, 42, 42, 0.2);
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 content .primary {
@@ -21,9 +21,6 @@ content .secondary {
     position: absolute;
     opacity: 0;
     -webkit-transition: all 350ms ease-out;
-    -moz-transition: all 350ms ease-out;
-    -o-transition: all 350ms ease-out;
-    -ms-transition: all 350ms ease-out;
     transition: all 350ms ease-out;
     background-color: #60998e;
 }
@@ -35,9 +32,6 @@ content .primary, content .secondary {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-transition: all 350ms ease-out;
-    -moz-transition: all 350ms ease-out;
-    -o-transition: all 350ms ease-out;
-    -ms-transition: all 350ms ease-out;
     transition: all 350ms ease-out;
     height: 100%;
 }
@@ -47,6 +41,14 @@ content .panel:hover .primary {
 }
 
 content .panel:hover .secondary {
+    opacity: 1;
+}
+
+.opac {
+    opacity: 0;
+}
+
+.solid {
     opacity: 1;
 }
 

@@ -4,7 +4,7 @@
     overflow: hidden;
     text-align: center;
     padding: 4rem;
-    min-height: 40vh;
+    height: 40vh;
 }
 
 .carousel>* {
@@ -20,6 +20,7 @@
     right: 0;
     opacity: 0;
     z-index: 0;
+    -webkit-transition: opacity 1.4s ease-in-out;
     transition: opacity 1.4s ease-in-out;
 }
 
