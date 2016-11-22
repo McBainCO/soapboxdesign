@@ -1,10 +1,18 @@
-
+div.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
 
 .carousel {
     overflow: hidden;
     text-align: center;
     padding: 4rem;
     height: 40vh;
+    width: auto;
 }
 
 .carousel>* {
