@@ -1,0 +1,10 @@
+node_modules
+.DS_Store
+brand/*.jpg
+src/.DS_Store
+src/pages
+src/templates
+src/styles/*.scss
+firebase.json
+.firebaserc
+gulpfile.js
